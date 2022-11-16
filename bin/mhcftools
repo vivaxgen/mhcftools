@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# PYTHON_ARGCOMPLETE_OK
+
+__copyright__ = '''
+mhcftools - [https://github.com/vivaxgen/mhcftools]
+
+(C) 2022 Hidayat Trimarsanto <trimarsanto@gmail.com>
+'''
+
+# entry point
+
+import sys
+import pathlib
+
+# append PATH for mhcftool python library
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
+
+from mhcftools import main
+
+main()
+
+# EOF
